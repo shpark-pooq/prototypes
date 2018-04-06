@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*편성표 상단*/
+.schedule-top-wrap{background-color:#23212a; text-align:center; padding-bottom:19px; }
+.schedule-top{padding:17px 70px 10px 82px; position:relative;}
+#open-week{border-radius:15px;  border:solid 1px #fff; padding:4px 7px; width:62px; position:absolute; left:10px; }
+.ico-schd-cal{width:16px; margin-right:3px;}
+#open-week button{font-size:10px; color:#fff;  font-family:'NanumSquare ExtraBold';}
+
+.today-schedule{font-size:14px; color:#fff;}
+.now-btn{border-radius:100px;  width:51px; position:absolute; right:10px; top:17px;}
+.now-btn button{width:51px; height:24px; font-family:'NanumSquareBold';  font-size:11px; text-align:left; color:#fff; text-align:center;}
+.present-time{font-size:13px; color:#777;}
+
+
+.sche-time-slider{height:56px; line-height:56px; border-bottom:1px solid #e5e5e5; }
+.sche-time-slider .swiper-slide{ text-align:center;}
+.sche-time-slider .swiper-slide p{font-family:'NanumSquareBold'; font-size:14px; color:#777;}
+.sche-time-slider .swiper-slide.swiper-slide-active p{color:#23212a;}
+.sche-time-slider .swiper-slide p.time-now:before{content:""; display:inline-block;  width:6px;  height:6px;  background-color:#8045dd; border-radius:100px; margin-right:5px;}
+.sche-time-slider .swiper-button-prev{background:url(../images/common/arrow-title-purple-prev.png) no-repeat center; background-size:27px 22px;}
+.sche-time-slider .swiper-button-next{background:url(../images/common/arrow-title-purple.png) no-repeat center; background-size:27px 22px;}
+
+
+/*리스트 공통*/
+.sche-channel-list{border-bottom:1px solid #e5e5e5; position:relative; padding:10px 0; min-height:60px;}
+.channel-left{width:88px; position:absolute;  left:0; text-align:center;}
+.channel-left img{max-width:78px;}
+.channel-center{padding-left:90px; padding-right:85px;}
+.channel-tit{font-size:13px;  line-height:1.38em; color:#23212a; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; word-wrap:break-word;}
+.channel-time{font-size:12px; color:#777; margin-top:3px;}
+.channel-right{width:75px; position:absolute; right:10px; top:50%; margin-top:-13px;}
+.channel-btn{display:inline-block; width:100%; height:26px; line-height:26px; border-radius:55px; font-size:11px;  text-align:center;}
+
+
+.sche-progress{position:relative; padding-left:88px; padding-right:10px; top:-6px;}
+.sche-progress .progress-bar-wrap{position:inherit;}
+.sche-channel-ing .channel-btn{border:solid 1px #8045dd; color:#8045dd;}
+
+/* 다시보기*/
+.sche-channel-end .channel-btn{border:solid 1px #777777; color:#777777;}
+.sche-channel-end .channel-time , .sche-channel-end .channel-tit , .sche-channel-end .channel-left{opacity:0.6;}
+
+/*방송예약*/
+.sche-channel-reserve .check-style02{float:right; max-width:35px; margin-top:-5px;}
+.sche-channel-reserve-ok{background-color:#f3f3f3;}
+.no-channel .channel-time , .no-channel .channel-tit{opacity:0.6;}
+

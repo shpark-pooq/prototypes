@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* 장르 팝업*/
+.sort-btn-wrap{text-align:center; padding-top:80px;}
+.sort-btn-wrap li{display:inline-block; padding:25px; }
+.sort-btn-wrap button img{width:75px; height:75px;}
+
+/*정렬 팝업*/
+.range-btn-wrap{position:fixed; right:14px; bottom:5px;}
+.range-btn{}
+.range-btn li{margin-bottom:10px;  text-align:center; }
+.range-btn li button{border:solid 1px #8045dd; width:50px; height:50px; background-color:#fff; border-radius:100px; font-size:10px;color:#8045dd;  font-family:'NanumSquare';}
+
+/* 공유하기 팝업 */
+.share-sns-list{width:236px; margin:45% auto 0;}
+.share-sns-list:after{content:""; display:block; clear:both;}
+.share-sns-list li{float:left; width:50%; text-align:center; margin-bottom:40px;}
+.share-sns-list button{font-size:12px; letter-spacing:-0.2px; color:#fff;}
+.share-sns-list img{width:80px; display:block; margin-bottom:9px;}
+
+/* 이벤트 팝업 */
+.popup-event-wrap{width:calc(100% - 60px); margin:20% auto; border-radius:8px; overflow:hidden;}
+.popup-event-slider .swiper-slide img{width:100%;}
+.popup-event-wrap .swiper-pagination-bullet{opacity:1; background-color:#fff; width:7px; height:7px;}
+.popup-event-wrap .swiper-pagination-bullet-active{background-color:transparent; border:1.5px solid #8145de; width:8px; height:8px;}
+.popup-event-bottom{background-color:#fff; padding:13px 19px;}
+.popup-event-bottom:after{content:""; display:block; clear:both;}
+.popup-event-bottom .check-style{float:left; display:inline-block;}
+.close-event-popup{float:right; font-size:13px;  letter-spacing:-0.2px; color:#23212a; font-family:'NanumSquare'; height:24px;}
+
+
+/* 편성표 팝업 */
+.weekday-list{position:absolute; left:16px; top:100px;}
+.weekday-list li{width:50px; height:50px; border-radius:50%; background-color:#8045dd; color:#fff; margin-bottom:9px;}
+.weekday-list li button{width:50px; height:50px; border-radius:50%; }
+.week-text{font-size:12px; font-family:'NanumSquareBold'; display:block;}
+.date-text{font-size:12px; font-family:'NanumSquare';}
+.weekday-list li.weekday-on .week-text,
+.weekday-list li.weekday-on .date-text{opacity:0.3;}
+
+
+/* 영화 팝업 */
+.movie-popup-wrap{width:270px; margin:40px auto 0;}
+.movie-popup-tit{ font-family:'NanumSquare ExtraBold';  font-size:18px;  letter-spacing:-0.3px;  text-align:center;  color:#fff; padding:20px 0;}
+.movie-popup-wrap:after{content:""; display:block; clear:both;}
+.movie-list{float:left; text-align:center; width:115px; margin-bottom:20px;}
+.movie-list:nth-child(2n){margin-left:10px;}
+.movie-list:nth-child(2n-1){margin-right:10px;}
+.movie-popup-wrap .thumb-title{text-align:left; white-space:inherit; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; word-wrap:break-word;  font-size:13px; color:#fff;}

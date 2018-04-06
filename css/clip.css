@@ -1,0 +1,126 @@
+
+/*서브페이지 상단 간격*/
+.clip-list-wrap{padding-top:10px;}
+
+/* 클립 홈 - 인기클립*/
+.clip-popular-top-home{padding:20px 10px 15px;}
+.clip-popular-top-home .component-title{padding-left:0;}
+.clip-popular-top-home .arrow-title{right:0;}
+.clip-popular-top-home .thumb-text-wrap {display:table; padding-top:0; vertical-align: middle;}
+.clip-popular-top-home .thumb-text-left{vertical-align:middle; width:43px; text-align:center; padding:10px 0 0;}
+.clip-popular-top-home .thumb-title-two{font-size:16px; font-family:'NanumSquareBold'; margin-top:9px; max-height:38px;}
+.clip-popular-top-home .thumb-text-right{position:relative; width:calc(100% - 43px);}
+.clip-popular-top-home .thumb-text01{margin-top:7px; float:left;}
+.clip-popular-top-home .thumb-text01:last-child{float:right;}
+.clip-popular-top-home .vod-img {padding-top:56.7%;}
+
+
+/*clip-component01*/
+.clip-component01{padding:0 10px;}
+.clip-component01.swiper-container{background-color:#f3f3f3; padding:10px 10px 41px;}
+.clip-component01-list{margin-bottom:10px;}
+.clip-component01-list > a{display:block; width:100%; background-color:#fff;  position:relative;}
+.clip-component01-list .vod-img{width:156px; padding-top:92px;}
+.clip-component01-list .thumb-text-wrap{position:absolute; right:0; top:0; width:100%; padding-left:166px; padding-top:13px; padding-right:20px;}
+.clip-component01-list .thumb-text-left{width:43px; text-align:center; vertical-align:middle;}
+.clip-component01-list .thumb-text01{margin-top:4px;}
+.clip-component01-list .thumb-title-two{height:29px;}
+.clip-component01 .swiper-pagination-bullets{bottom:24px !important;}
+.clip-component01 .swiper-pagination-bullet{ background-color: #e6e6e6; opacity:1;}
+.clip-component01 .swiper-pagination-bullet-active{border: solid 1.5px #8145de;}
+
+
+.boardcast-list:after{content:""; display:block; clear:both;}
+.boardcast-list li{float:left; width:33.3333%; border-bottom:1px solid #e5e5e5; border-right:1px solid #e5e5e5; }
+.boardcast-list li:nth-child(3n){border-right:none;}
+.boardcast-list li img{width:100%;}
+
+
+/* clip-component02 */
+.clip-component02 .swiper-slide:first-child{margin-left:10px !important;}
+.clip-component02 .swiper-slide{width:163px !important;}
+.clip-component02 .vod-img {padding-top:56.5%;}
+
+/* clip-component03 */
+.clip-component03 .swiper-slide:first-child{margin-left:10px !important;}
+.clip-component03 .swiper-slide{width:100px !important; text-align:center;}
+
+
+/* clip-component04 */
+.clip-component04{ padding:0 10px;}
+.clip-component04 .vod-img {padding-top:56.6%;}
+.clip-component04:after{content:""; display:block; clear:both;}
+.clip-component04-list{float:left; width:50%;}
+.clip-component04-list:nth-child(2n){padding-left:2.5px;}
+.clip-component04-list:nth-child(2n-1){padding-right:2.5px;}
+.clip-component04-list .thumb-text-wrap{height:80px;}
+.clip-component04-list .thumb-text-right{vertical-align:top;}
+
+
+/* 클립 테마 */
+.clip-theme-wrap{height:110px; overflow:hidden; margin-top:5px; }
+.clip-theme-wrap .clip-component01{width:100%; margin:0 auto; position:relative;}
+.clip-theme-wrap .clip-component01-list{margin-bottom:0; border-bottom:1px solid #efefef;}
+.clip-theme-wrap.theme-open{height:auto; padding-bottom:30px;}
+.clip-theme-wrap.theme-open .clip-component01{ margin:-35px auto 0;}
+
+/* 클립 테마 뷰 */
+.component-top ~ .clip-component01 {padding-top:5px;}
+.component-top ~ .clip-component01 .clip-component01-list{border-bottom:1px solid #efefef; margin-bottom:0;}
+
+
+
+/*클립 방송사별 */
+.clip-bc-top{background-size:100% 100%;}
+.clip-bc-scroll .swiper-slide{width:auto !important; padding:0 5px;}
+.bc-name{display:inline-block; padding:0 14px; color:rgba(255,255,255,0.8); font-family:'NanumSquare'; font-size:14px; height:36px; line-height:36px; text-align:center; }
+.swiper-slide-active .bc-name{font-family:'NanumSquare ExtraBold'; color:rgba(255,255,255,1); border:1px solid #fff; border-radius:38px;}
+.clip-top-img {margin-top:10px; position:relative; display:block; padding-top:74.7%; overflow: hidden;}
+.clip-top-img > img {position:absolute; top:0; left:0; right:0; bottom:0; min-height:100%; width:100%;}
+.clip-bc-top .component-wrap {padding:10px 0 0;}
+.clip-bc-top .clip-air-box {position:absolute; bottom:10px; left:10px; width:100px; height:100px; background:rgba(255, 255, 255, .95); padding:10px; overflow:hidden;}
+.clip-bc-top .clip-air-box .box-title {color:#23212a; line-height:1.67; font-size:15px; font-family:'NanumSquareBold'; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.clip-bc-top .clip-air-box .go-site {color:#23212a; font-size:13px; background:url(../images/common/ico-home.png) no-repeat top left; background-size:18px; padding:0 0 2px 23px; line-height:1.38; display:inline-block; margin-top:36px;}
+
+
+/* 클립 인기 */
+.clip-popular-top .vod-img {padding-top:56.6%;}
+.clip-popular-top .thumb-text-wrap {margin:0 0 10px;}
+
+
+/* clip-component05 */
+.clip-component05 .swiper-slide{margin-left:10px !important;}
+.clip-component05 .swiper-slide{width:303px !important;}
+.clip-component05 .vod-img {padding-top:170px;}
+.clip-component05 .vod-img > img{width:303px !important; height:170px;}
+
+
+/*이벤트 배너*/
+.clip-event-wrap img{width:100%;}
+
+/*clip-component06*/
+.clip-component06{padding:0 10px;}
+.clip-component06-list{margin-bottom:10px;}
+.clip-component06-list > a{display:table; width:100%; background-color:#fff; table-layout:fixed;}
+.clip-component06-list .vod-img{display:table-cell; width:156px; vertical-align:middle; padding-top:88px;}
+.clip-component06-list .vod-img > img{width:156px; height:88px;}
+.clip-component06-list .thumb-text-wrap{display:table-cell; vertical-align:middle; padding:0 17px;}
+.clip-component06-list .thumb-text01{margin-top:4px;}
+
+
+.view-all-btn{display:block; width:40px; margin:14px auto 0;}
+.view-all-btn > img{width:46px;}
+
+/* 방송사별 메뉴 */
+.clip-boardcast-nav {padding:10px 0 0; margin: 0 0 -10px;}
+
+
+
+/*clip 상세*/
+.ic-time-p{width:12px;}
+.view-top-btn{text-align:center; padding:20px 0;}
+.view-top-btn > a{display:inline-block; padding:11px 15px; font-family:'NanumSquareBold'; font-size:13px; color:#8045dd; border-radius:45px;  border:solid 1px #8045dd;}
+.view-top-arrow{width:12px;}
+
+.replay-tit{font-size:13px; color:#8045dd; position:absolute; right:10px;}
+.ic-replay-a{width:20px;}
