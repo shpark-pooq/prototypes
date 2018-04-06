@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*원형 */
+.round-component .swiper-slide{width:70px !important; text-align:center;}
+.round-component .swiper-slide:first-child{margin-left:11px;}
+.round-component .vod-img{width:70px; height:70px; border-radius:100px; overflow:hidden;}
+.round-component .vod-img > img{width:70px; height:70px; border-radius:100px;}
+.round-component .vod-end:after{border-radius:100px;}
+.round-component .progress-bar-wrap{overflow:hidden; position:inherit; background:transparent; border-radius:100px; border:1px solid rgba(128,69,221,.5); margin-top:5px;}
+.round-component .thumb-title-two {height:35px; line-height:18px;}
+.round-component .progress-bar-wrap {height:8px;}
+
+/* 인기 VOD */
+.main-popular-top{padding:15px 10px 44px; background-size:cover; position:relative; background-position:top;}
+.main-popular-overlay{position:absolute; width:100%; height:100%; left:0; top:0;
+	background: linear-gradient(180deg,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+	background: -ms-linear-gradient(180deg,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+	background: -moz-linear-gradient(180deg,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-linear-gradient(180deg,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+	background: -o-linear-gradient(180deg,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0.2)', endColorstr='rgba(0,0,0,0)', gradientType=0);
+}
+.dimmed-grd{
+	position:absolute; top:0; left:0; height:100%; width:100%; display:block;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .39) 71%, rgba(0, 0, 0, .75));
+	background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .39) 71%, rgba(0, 0, 0, .75));
+	background: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .39) 71%, rgba(0, 0, 0, .75));
+	background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .39) 71%, rgba(0, 0, 0, .75));
+	background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .39) 71%, rgba(0, 0, 0, .75));
+}
+
+.main-popular-top a { display:block; width:100%; background:url(../images/common/ico-play02.png) no-repeat center; background-size:33px; position:relative; z-index:10;}
+.main-popular-top .component-title{padding:0;}
+.main-popular-title{display:block; padding-top:17%; padding-left:7px; }
+.main-popular-num{font-family:'NanumSquare ExtraBold'; font-size:17px; letter-spacing:-0.3px; color:#fff; display:block;}
+.main-popular-tit{font-family:'NanumSquareBold'; font-size:18px; letter-spacing:-0.3px; color:#fff; display:block;}
+.main-popular-top .thumb-text01{opacity:0.5;}
+
+.main-component-list{padding:0 17px; margin-top:-30px; position:relative; z-index:10;}
+.main-pouplar-list{border-bottom:1px solid #efefef; background-color:#fff; height:81px; position:relative;}
+.main-pouplar-list:after{content:""; display:block; clear:both;}
+.main-pouplar-list .vod-img{float:left; width:142px; padding-top:81px;}
+.main-pouplar-list .thumb-text-wrap{position:absolute; padding-left:142px; width:100%; padding-top:0; height:81px;}
+.main-pouplar-list .thumb-text-left{width:48px; text-align:center; vertical-align:middle;}
+.main-pouplar-list .thumb-text-right{vertical-align:middle; padding-right:15px;}
+.main-pouplar-list .vod-img:after{z-index:10; content:""; display:block; width:100%; height:100%; background:url(../images/common/ico-play01.png) no-repeat center ; background-size:33px; position:absolute; top:0; left:0; z-index:10;}
+
+.view-all-btn{display:block; width:45px; margin:14px auto 0;}
+.view-all-btn > img{width:46px;}
+
+@media screen and (max-width: 374px) {
+    .main-component-list{padding:0 10px}
+    .main-pouplar-list{height:68px}
+    .main-pouplar-list .vod-img{width:122px; padding-top:68px}
+    .main-pouplar-list .thumb-text-wrap{padding-left:122px; height:68px}
+    .main-pouplar-list .thumb-text-left{width:34px}
+    .main-pouplar-list .thumb-text-right{padding-right:5px}
+}
+
+/* 공지사항 */
+.main-notice{padding:8px 20px; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; position:relative;}
+.main-notice:after{content:""; display:block; clear:both;}
+.main-noti-ico{float:left; display:inline-block; width:24px; height:24px;}
+.main-noti-ico > img{width:24px;}
+.main-notice a {margin-top:3px; padding-left:40px; padding-right:40px;  position:absolute; width:100%; font-size:12px; color:#23212a; display:block; white-space:nowrap; overflow:hidden;  text-overflow:ellipsis; }
+
+
+/* footer */
+footer.footer-wrap{text-align:center; padding:30px 0 24px;}
+
+.ft-sns li{display:inline-block; margin:0 4px;}
+.ft-sns img{width:40px;}
+
+.ft-policy{display:inline-block; margin-top:19px;}
+.ft-policy li{float:left; padding:0 10px; border-right:1px solid #e5e5e5; line-height:12px;}
+.ft-policy li:last-child{border-right:none;}
+.ft-policy a{font-size:11px;  letter-spacing:-0.2px; color:#666;}
+.copyrights{margin-top:8px; font-size:11px;  letter-spacing:-0.2px; color:#777;}

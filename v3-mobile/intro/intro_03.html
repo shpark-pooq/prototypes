@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>푹 (pooq)</title>
+	<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="지상파 종편 등 실시간TV 무료, 가장빠른 방송다시보기, 전체 방송VOD무제한 15일무료, 무제한영화" />
+	<meta name="keywords" content="푹, pooq, 푹티비, 실시간TV, 방송VOD, 다시보기, MBC온에어, SBS온에어, KBS온에어" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/intro.css">
+
+	<script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<link rel="stylesheet" href="../css/swiper.css">
+
+</head>
+
+<!--
+	각 section 하단의 button(intro-sec01-bt / intro-sec02-bt ) 클릭 시 intro-open 클래스 추가 
+	1번영역 intro-sec01-bt 클릭시 2번영역에 intro-open 클래스 추가 1번영역 intro-open 클래스 제외
+	2번영역 intro-sec02-bt 클릭시 1번영역에 intro-open 클래스 추가 2번영역 intro-open 클래스 제외
+-->
+<script>
+	$(document).ready(function(){
+		$('.intro-sec01-bt').click(function(){
+			$('.intro-sec01').removeClass('intro-open');	
+			$('.intro-sec02').addClass('intro-open');
+		
+		});
+
+		$('.intro-sec02-bt').click(function(){
+			$('.intro-sec02').removeClass('intro-open');	
+			$('.intro-sec01').addClass('intro-open');
+		
+		});	
+	});
+</script>
+
+
+<!-- 팝업 스트립트 -->
+<script src="https://unpkg.com/vue"></script>
+<script type="text/x-template" id="modal-template">
+  <transition name="modal">
+    <div class="modal-mask">
+		<button class="modal-default-button" @click="$emit('close')"><img src="../images/intro/intro-pop-close.png" alt="팝업 닫기"/></button>
+      <div class="modal-wrapper">
+          <div class="modal-body">
+            <slot name="body">              
+            </slot>
+          </div>
+      </div>
+    </div>
+  </transition>
+</script>
+
+<!--
+참고사항
+.intro-pw 에 값이 입력되면 
+.intro-exist 클래스 추가
+-->
+
+<body>
+<section class="intro-sec01 intro-open" id="app">
+	<div class="intro-sec01-top">
+		<div class="intro-sec01-content">
+			<h1 class="intro-pooqzone"><img src="../images/intro/pooqzone-logo.png" alt="pooqzone"/></h1>
+			<p class="intro-sec01-tit">업체명 업체명 푹존입니다.</p>
+			<p class="intro-sec01-text">방송 LIVE, 방송 VOD, 영화를</p>
+			<p class="intro-sec01-text"><span class="col-purple fb">무료</span>로 감상하세요</p>
+			<button class="intro-sec01-btn"  id="show-modal" @click="showModal = true">방송영화 무료보기</button>
+			  <!-- use the modal component, pass in the prop -->
+			  <modal v-if="showModal" @close="showModal = false">
+
+				<div slot="body">
+					<div class="intro-pw-wrap">
+						<p class="intro-pw-tit">푹존 접속번로를 입력하세요</p>
+						<p class="intro-pw-text">(모르실 경우, 카운터에 문의하세요)</p>
+
+						<ul class="intro-pw-input">
+							<li><div class="intro-pw intro-exist"><input type="tel" title="푹존 접속번호 첫번째 자리" value="3"><div></li>
+							<li><div class="intro-pw"><input type="tel" title="푹존 접속번호 두번째 자리"><div></li>
+							<li><div class="intro-pw"><input type="tel" title="푹존 접속번호 세번째 자리"><div></li>
+							<li><div class="intro-pw"><input type="tel" title="푹존 접속번호 네번째 자리"><div></li>
+						</ul>
+
+						<ul class="intro-pw-btn">
+							<li><button>취소</button></li>
+							<li><input type="submit" value="확인"><li>
+						</ul>
+					</div>
+				</div>
+			  </modal>
+		</div>
+	</div><!--intro-sec01-top//-->
+	<button class="intro-sec01-bt">
+		<span class="pooqtv-logo01"><img src="../images/intro/pooq-tv-logo01.png" alt="pooq tv"></span>
+		<span class="pooqtv-bt-text">대한민국 대표 앱 TV, pooq 아직 이용해보지 않으셨나요?</span>
+	</button><!--intro-sec01-bt//-->
+</section>
+
+<section class="intro-sec02">
+	<div class="intro-sec02-top">		
+		<div class="pooq-tv-logo02"><img src="../images/intro/pooq-tv-logo02.png" alt="pooq tv"/></div>
+		<p class="intro-sec02-tit">TV 그 이상, 대한민국 대표 앱 TV</p>
+		<a href="#" class="intro-sec02-btn">pooq 둘러보기</a>
+
+		<div class="intro-slider-wrap">
+			<!-- Slider main container -->
+			<div class="swiper-container intro-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../images/temp/intro-slider.png" alt=""/></div>
+					<div class="swiper-slide"><img src="../images/temp/intro-slider.png" alt=""/></div>
+					<div class="swiper-slide"><img src="../images/temp/intro-slider.png" alt=""/></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>			
+		</div><!--intro-slider-wrap//-->
+	</div><!--intro-sec01-top//-->
+	<button class="intro-sec02-bt">
+		<img src="../images/intro/pooqzone-logo.png" alt="pooqzone"/>
+	</button><!--intro-sec01-bt//-->
+</section>
+
+
+  <script>
+  var mySwiper = new Swiper ('.intro-slider', {
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  })
+  </script>
+
+
+<script>
+// register modal component
+Vue.component('modal', {
+  template: '#modal-template'
+})
+
+// start app
+new Vue({
+  el: '#app',
+  data: {
+	showModal: true
+  }
+})
+
+</script>
+</body>
+</html>

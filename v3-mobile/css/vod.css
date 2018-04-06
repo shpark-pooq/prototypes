@@ -1,0 +1,161 @@
+
+
+/* vod top*/
+.vod-top{background-size:100% 100%;}
+.vod-top .thumb-title-one{color:#fff;}
+
+/*vod-component01*/
+.vod-component01 .swiper-slide:first-child{margin-left:10px !important;}
+.vod-component01 .swiper-slide{width:107px !important;}
+.vod-component01 .vod-img {padding-top:141.2%;}
+
+/*vod-component02*/
+.vod-component02 .swiper-slide:first-child{margin-left:10px !important;}
+.vod-component02 .swiper-slide{width:163px !important;}
+.vod-component02 .vod-img {padding-top:56.5%;}
+
+/*vod-component03*/
+.vod-component03 {text-align:center;}
+.vod-component03 .swiper-slide:first-child{margin-left:10px !important;}
+.vod-component03 .swiper-slide{width:100px !important;}
+
+
+/*vod-component05*/
+.vod-component05 .swiper-wrapper{padding-bottom:20px;}
+.vod-component05 .swiper-slide{padding:0 20px;}
+.vod-component05 .swiper-slide:after{content:""; display:block; clear:both;}
+.vod-component05-list{float:left; width:50%; border:5px solid #fff;}
+.vod-component05-list:nth-child(odd){border-right:2.5px solid #fff;}
+.vod-component05-list:nth-child(even){border-left:2.5px solid #fff;}
+.vod-component05 .swiper-pagination{bottom:0 !important;}
+.vod-component05 .swiper-pagination-bullet{width:7px; height:7px; background-color:#e6e6e6; opacity:1;}
+.vod-component05 .swiper-pagination-bullet-active{border:solid 1.5px #8145de; background-color:#fff}
+.vod-component05 .vod-img {padding-top:63.2%;}
+
+/* vod-component06 */
+.component06-top{height:180px;	background-size:cover; background-position:top center;	padding-top:48px; text-align:center;}
+.component06-top .swiper-slide{width:33.3333% !important;}
+.component06-tit{font-size:14px; color:#fff; font-family: 'NanumSquare ExtraBold'; display:block;}
+.component06-tit-sub{font-size:14px; color:#fff; font-family: 'NanumSquare'; display:block;}
+.component06-top .swiper-slide-active .component06-tit{font-size:24px;}
+.component06-top .swiper-slide-active .component06-tit-sub{font-size:24px; margin-top:-10px;}
+.swiper-pagination.vod-pagination{bottom:42px !important;}
+.vod-pagination .swiper-pagination-bullet-active{border:2px solid #8145DE;	background-color:transparent !important;}
+.vod-pagination .swiper-pagination-bullet{background-color:#E6E6E6;	opacity:1;	vertical-align:middle;}
+.swiper-container.vod-component06{top:-30px; z-index:999; }
+.swiper-container.vod-component06 .swiper-slide:first-child{margin-left:10px !important;}
+.vod-component06-sub .swiper-slide{width:107px !important;}
+.vod-component06 .vod-img {padding-top:141.2%;}
+
+/*태그*/
+.tag-list:after{content:""; display:block; clear:both;}
+.tag-list{padding:0 10px;}
+.tag-list li{float:left; margin-right:9px; margin-bottom:10px;}
+.tag-style01{display:inline-block; padding:8px 16px; border-radius:100px; border:solid 1px #8045dd; font-family:'NanumSquare'; font-size:14px; color:#23212a;}
+
+
+/* VOD 리스트*/
+.vod-popular-top{margin-bottom:20px;}
+.vod-popular-top .vod-img {padding-top:56%;}
+.vod-popular-top .thumb-text-wrap{padding-top:10px;}
+.vod-popular-top .thumb-text-left{width:47px; vertical-align:middle; text-align:center;}
+.vod-popular-top .thumb-title-one{font-size:16px; padding-right:30px; font-family:'NanumSquareBold';}
+.vod-popular-top .thumb-text01{font-size:13px; margin-top:5px;}
+
+
+.vod-list-wrap{ padding:7.5px;}
+.vod-list-wrap:after{content:""; display:block; clear:both;}
+.vod-list{float:left; padding:2.5px; width:50%;}
+.vod-list .vod-img {padding-top:57.8%;}
+.vod-list03{float:left; padding:2.5px; width:33.3333%;}
+.vod-list03 .vod-img {padding-top:141.2%;}
+.vod-list .thumb-text-left{width:17px;}
+
+
+/* VOD 테마 */
+.vod-theme-wrap{height:110px; overflow:hidden; margin-top:5px;}
+.vod-theme-wrap:first-child{margin-top:10px;}
+
+/*.vod-theme-top{background-size:cover; padding:15px; position:relative; height:110px; -webkit-transition:height .7s; transition:height .7s;}*/
+
+.vod-theme-wrap .component-top{background-size:cover; padding:15px; position:relative; height:110px; -webkit-transition:height .3s; transition:height .3s;}
+.vod-theme-wrap .component-top ~ .swiper-container{margin-top:0; -webkit-transition:margin .7s; transition:margin .7s;}
+.vod-theme-wrap .theme-btn{top:71px;}
+
+.vod-theme-list-wrap{width:calc(100% - 34px); border:2.5px solid #fff; position:relative; }
+.vod-theme-list-wrap:after{content:""; display:block; clear:both;}
+.vod-theme-list{float:left; width:50%; border:2.5px solid #fff;}
+.vod-theme-list .vod-img {padding-top:59.2%;}
+
+
+
+/* VOD 테마 열렸을 경우 */
+.vod-theme-wrap.theme-open{height:auto; margin-bottom:20px;}
+.theme-open .component-top{height:170px;}
+.theme-open .vod-theme-list-wrap{ margin:-35px auto 0; }
+.theme-open .component-top ~ .swiper-container {margin-top:-35px;}
+.theme-open .theme-btn{top:90px;}
+
+
+
+
+/*vod 뷰페이지*/
+.vod-view-wrap{position:relative; padding:20px 10px; margin-top:21px;}
+.vod-view-btn{position:absolute; right:10px; top:20px; width:24px; height:24px; background:url(../images/common/ico-info.png) no-repeat center; background-size:24px;}
+.vod-view-info{display:table; width:100%;}
+.vod-porgram-img{display:table-cell; width:60px; vertical-align:middle;}
+.vod-porgram-img > img{width:60px;}
+.vod-porgram-info{display:table-cell; width:calc(100% - 60px); padding-left:16px; color:#fff; vertical-align:middle;}
+.vod-porgram-info a{font-size:12px; color:#fff;}
+.program-tit{font-size:17px;}
+.program-time{font-size:15px;}
+.porgram-desc{color:#fff; padding:12px 10px 0; font-size:12px;  line-height:1.25em; display:none;}
+
+/*vod-열렸을경우*/
+.vod-view-wrap-open .vod-view-btn{background:url(../images/common/ico-info-on.png) no-repeat center; background-size:24px;}
+.vod-view-wrap-open .porgram-desc{display:block;}
+
+.bg-gray{background-color: #f3f3f3;}
+
+
+.vod-view-all{position:relative; background-color:#fff; margin:0 auto 10px; width:96%; width:calc(100% - 20px); width:-webkit-calc(100% - 20px); width:-moz-calc(100% - 20px); }
+.vod-view-all > a{display:table; width:100%; background-color:#fff; height:88px; position:relative; table-layout:fixed;}
+.vod-view-all .vod-img{display:table-cell; width:137px; vertical-align:middle; border:5px solid #fff; padding-top:0;}
+.vod-view-all .vod-img > img{width:137px;}
+.vod-view-all .thumb-text-wrap{display:table-cell; width:calc(100% - 137px); padding:0 10px; vertical-align:middle;}
+.vod-view-all .thumb-title-one{width:75%; width:calc(100% - 40px); width:-webkit-calc(100% - 40px); width:-moz-calc(100% - 40px); }
+.vod-view-all .thumb-text01{width:75%; width:calc(100% - 27px); width:-webkit-calc(100% - 27px); width:-moz-calc(100% - 27px); overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp: 2; /* 라인수*/ -webkit-box-orient: vertical; word-wrap:break-word; line-height:1.5em; max-height:3em;}
+.vod-view-download{position:absolute; right:0; top:0; z-index:10;}
+.vod-view-download img{width:24px;}
+.vod-view-all-btn{display:block; margin:0 auto;}
+
+
+.modal-container.width-100{width:100%; height:100%; overflow:hidden; background-color:#fff; margin:0;}
+.modal-container.width-100 .modal-body{height:100%;}
+.vod-view-all-popup-wrap{height:100%;}
+.vod-view-all-wrap{height:calc(100% - 90px); overflow-y:scroll; background-color:#f3f3f3;}
+
+
+.vod-view-all-pop-btn{padding:20px 10px;}
+.vod-view-all-pop-btn:after{content:""; display:block; clear:both;}
+.vod-view-all-pop-btn li{float:left; margin-right:13px;}
+.vod-view-all-pop-btn li button{font-size:12px;  color:#888;}
+.vod-view-all-pop-btn li button:before{content:""; display:inline-block; width:7px; height:7px; background-color:#cdcdcd; border-radius:50%; margin-right:5px; margin-top:-3px; vertical-align:middle;}
+.vod-view-all-pop-btn li button.vod-all-on:before{background-color:#8045dd;}
+
+
+.vod-view-clip{position:relative; background-color:#fff; margin:0 auto 10px; width:96%; width:calc(100% - 20px); width:-webkit-calc(100% - 20px); width:-moz-calc(100% - 20px);}
+.vod-view-clip > a{display:table; width:100%; background-color:#fff; height:88px; position:relative; table-layout:fixed;}
+.vod-view-clip .vod-img{display:table-cell; width:156px; vertical-align:middle; border:5px solid #fff; padding-top:0;}
+.vod-view-clip .vod-img > img{width:156px;}
+.vod-view-clip .thumb-text-wrap{display:table-cell; width:calc(100% - 156px); padding:0 10px; vertical-align:middle;}
+.vod-view-clip .thumb-title-two{width:calc(100% - 27px); }
+.vod-view-clip .thumb-text01{margin-top:5px;}
+
+
+
+.vod-area{position:relative;}
+.view-back-btn{position:absolute; left:7px; top:22px;}
+.play-btn{position:absolute; left:50%; margin-left:-16.5px; top:50%; margin-top:-23px;}
+.ico-play02{width:33px;}
+

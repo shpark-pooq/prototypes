@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*공통*/
+.bg-gray{background-color:#f7f7f7;}
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;}
+.bull{display:inline-block; width:2px; height:2px; background-color:#23212a; vertical-align:middle; margin:0 3px;}
+
+.bb-none{border-bottom:none !important;}
+.br-none{border-right:none !important;}
+
+.vat{vertical-align:top !important;}
+.vab{vertical-align:bottom !important;}
+
+.pt0 {padding-top:0!important;}
+.ptb5 {padding-bottom:5px!important; padding-top:5px!important;}
+.pt10{padding-top:10px;}
+.pt30{padding-top:30px;}
+.pb60{padding-bottom:60px;}
+.pb25{padding-bottom:25px;}
+.mt5{margin-top:5px;}
+.mb5{margin-bottom:5px;}
+
+.tar{text-align:right !important;}
+.tac{text-align:center !important;}
+
+
+/* gray */
+.dot-text{margin-bottom:4px;}
+.dot-text:before{content:""; display:inline-block; width:2px; height:2px; background-color:#ccc; border-radius:100px;  margin-right:7px; vertical-align:top; margin-top:8px;}
+.dot-text > span{display:inline-block; width:95%; width:calc(100% - 10px);  width:-webkit-calc(100% - 10px); width:-moz-calc(100% - 10px);   font-size:11px;  line-height:1.64em; color:#777;}
+.dot-text:last-child{margin-bottom:0;}
+/* black */
+.dot-text-b{margin-bottom:4px;}
+.dot-text-b:before{content:""; display:inline-block; width:2px; height:2px; background-color:#23212a; border-radius:100px;  margin-right:7px; vertical-align:top; margin-top:8px;}
+.dot-text-b > span{display:inline-block; width:95%; width:calc(100% - 10px);  width:-webkit-calc(100% - 10px); width:-moz-calc(100% - 10px);  font-size:11px;  line-height:1.64em; color:#23212a;}
+.dot-text-b:last-child{margin-bottom:0;}
+
+
+/*체크박스 스타일 -공통 */
+.check-style input[type="checkbox"]{position:absolute; clip:rect(0,0,0,0);}
+.check-style input[type="checkbox"] + label {position:relative; font-size:13px;	letter-spacing:-0.2px; color:#23212a; font-family:'NanumSquare';}
+.check-style input[type="checkbox"] + label:before {content:' '; display:inline-block; width:22px; height:22px; margin-right:8px;}
+
+/*보라색 체크박스*/
+.check-style input[type="checkbox"].check-purple + label:before{background: #fff; border: 1px solid #d9d9d9;	vertical-align:middle;}
+.check-style input[type="checkbox"].check-purple:focus + label:before{border:1px solid #8045dd;}
+.check-style input[type="checkbox"].check-purple:checked + label:before{background:url(../images/common/check-purple.png) #8045dd no-repeat center; background-size:22px; border:1px solid #8045dd;}
+
+
+/*라디오 버튼*/
+.radio-style > span{margin-right:15px;}
+.radio-style input[type="radio"]{position:absolute;	clip:rect(0,0,0,0);}
+.radio-style input[type="radio"] + label {position:relative; font-size:14px; letter-spacing:-0.3px;  color:#23212a;}
+.radio-style input[type="radio"] + label:before {content:' '; display:inline-block; width:22px;	height:22px; margin-right:7px; border-radius:50%; background:url(../images/common/radio-normal.png) #fff no-repeat center; background-size:22px;}
+
+/*보라색 라디오 박스*/
+.radio-style input[type="radio"].radio-purple + label:before{border: 1px solid #d9d9d9;	vertical-align:middle;}
+.radio-style input[type="radio"].radio-purple:focus + label:before{border: 1px solid #8045dd;}
+.radio-style input[type="radio"].radio-purple:checked + label:before{background:url(../images/common/radio-purple.png) #8045dd no-repeat center; background-size:22px; border:1px solid #8045dd;}
+
+
+
+/* 버튼 */
+.btn-wrap ul:after{content:""; display:block; clear:both;}
+.btn-wrap li{float:left;}
+.one-btn li{width:100%; padding:0 20px;}
+.two-btn li{width:50%;}
+.btn-wrap a , .btn-wrap button{display:block; width:100%; height:45px; line-height:45px; font-family:'NanumSquareBold'; font-size:16px; letter-spacing:-0.3px; text-align:center; color:#fff;}
+.btn-round-purple{border-radius:100px; background-color:#8045dd;}
+.btn-round-blank{border-radius:100px; border:1px solid #8045dd; color:#8045dd !important;}
+.btn-black{background-color:#23212a;}
+.btn-purple{background-color:#8045dd;}
+.btn-disable{background-color:#CDCDCD !important; color:#777 !important;}
+.pos-bt{position:fixed; width:100%; bottom:0; left:0;}
+
+.two-btn li a.btn-round-purple{width:98%; width:calc(100% - 10px); height:-webkit-calc(100% - 10px); height:-moz-calc(100% - 10px); margin-right:5px;}
+.two-btn li a.btn-round-blank{width:98%; width:calc(100% - 10px); height:-webkit-calc(100% - 10px); height:-moz-calc(100% - 10px);  margin-left:5px; }
+
+/* header */
+.component-header{text-align:center; height:40px; line-height:40px; padding:0 10px; position:relative; background-color:#fff;}
+.component-header h3{font-family:'NanumSquareBold'; font-size:16px; color:#212121;}
+.component-header .component-back{position:absolute; left:0; }
+.component-header .component-close{position:absolute; top:0; right:10px; }
+.component-header img{width:32px;}
+
+.nav-depth01{text-align:center; background-color:#fff;}
+.nav-depth01 a{display:inline-block; padding:12px 7px 9px;  font-family:'NanumSquareBold'; font-size:14px; color:#23212a;}
+.nav-depth01 a.depth01-on{color:#8045dd; border-bottom:3px solid #8045dd; }
+.nav-depth01 .swiper-slide{height:40px !important;}
+.nav-fixed02 .swiper-slide{width:50%; }
+.nav-fixed03 .swiper-slide{width:33.3333%;}
+.nav-scroll{padding-left:25px; padding-right:25px;}
+.nav-scroll .swiper-slide{width:auto !important;}
+
+/* 상단 이벤트 */
+.ticket-event{background-color:#fff; margin:10px 10px 15px; border-radius:6px 6px 0 0;}
+.ticket-event-img img{width:100%;}
+.ticket-event-text{display:none; padding:10px;}
+.ticket-event-btn{display:none;}
+.ticket-event label{display:block; width:100%; font-size:12px; letter-spacing:-0.2px; text-align:center; color:#23212a; height:40px; line-height:40px; border-top:1px solid #e5e5e5;}
+.event-open-arrow{display:inline-block; width:16px; height:16px; vertical-align:middle; margin-left:5px; background-image:url(../images/common/arrow-ticket.png); background-repeat:no-repeat; background-size:32px; background-position:left center;}
+/* .ticket-event-btn:focus ~ label{border:1px solid #8045dd;}
+.ticket-event-btn:checked ~ label{border-bottom:1px solid #e5e5e5;} */
+.ticket-event-btn:checked ~ label .event-open-arrow{background-position:right center;}
+.ticket-event-btn:checked ~ .ticket-event-text{display:block;}
+
+/* 이용권 리스트 */
+.ticket-wrap{padding:15px 10px;}
+.ticket-layout{width:100%; background-color:#fff; border-radius:4px; margin-bottom:5px;}
+.ticket-layout:last-child{margin-bottom:0;}
+.ticket-layout th{width:calc(100px - 120px); text-align:left; padding:15px 0 15px 15px; font-weight:normal;}
+.ticket-layout td{width:120px; padding:15px 15px 15px 0; text-align:right;}
+.ticket-wrap .btn-purple {background:#8045dd; border-radius:25px; height:45px; width:100%; color:#fff; font-size:16px; display:block; text-align:center; line-height:44px;}
+.ticket-wrap .btn-purple > a {color:#fff;}
+
+.ticket-checkbox-layout{width:100%; background-color:#fff; border-radius:4px; margin-top:5px;}
+.ticket-checkbox-layout tr{border-bottom:1px solid #e5e5e5;}
+.ticket-checkbox-layout tr:last-child{border-bottom:0;}
+.ticket-checkbox-layout th{text-align:left; font-family:'NanumSquareBold';  font-size:13px; color:#23212a; font-weight:normal; padding-left:15px;}
+.ticket-checkbox-layout td{height:60px;}
+.ticket-checkbox-layout label{font-size:14px !important; color:#777 !important;}
+
+.ticket-list-wrap{width:100%; background-color:#fff; border-radius:4px; margin-bottom:5px;}
+.ticket-list-btn{text-align:left; padding:20px 15% 20px 15px; width:100%;}
+button.ticket-list-btn{ background:url(../images/common/arrow-list-open.png) no-repeat 95% center; background-size:30px;}
+.ticket-list-btn-tit{font-family:'NanumSquareBold';  font-size:15px;  letter-spacing:-0.3px; color:#23212a;}
+.ticket-list-btn-text{font-size:12px; line-height:1.25em; color:#777; margin-top:5px;}
+
+.ticket-list-layout{width:96%; width:calc(100% - 20px); width:-webkit-calc(100% - 20px); width:-moz-calc(100% - 20px); margin:0 auto 5px; display:none;}
+.ticket-list-layout tr{border-bottom:1px solid #e5e5e5;}
+.ticket-list-layout tr:last-child{border-bottom:none;}
+.ticket-list-layout th{width:calc(100px - 120px); text-align:left; padding:15px 0; font-weight:normal;}
+.ticket-list-layout td{width:104px; padding:15px 0; text-align:right;}
+
+.ticket-payment-layout{width:100%; background-color:#fff; border-radius:4px; margin-bottom:5px;}
+.ticket-payment-layout tr{border-bottom:1px solid #e5e5e5;}
+.ticket-payment-layout tr:last-child{border-bottom:none;}
+.ticket-payment-layout .ticket-list-btn{border-bottom:1px solid #e5e5e5;}
+
+/* 이용권 열림 */
+.ticket-list-open button.ticket-list-btn{border-bottom:1px solid #e5e5e5; background:url(../images/common/arrow-list-close.png) no-repeat 95% center; background-size:30px;}
+.ticket-list-open .ticket-list-layout{display:table;}
+
+/*이용권 텍스트 스타일*/
+.m-ticket-title{font-family:'NanumSquareBold'; font-size:15px; letter-spacing:-0.3px; color:#23212a; margin-bottom:5px; position:relative;}
+.m-ticket-title > a{position:absolute; right:0; font-size:12px; color:#23212a;}
+.m-ticket-title img{width:12px; margin-top:-3px;}
+.m-ticket-title .reset {font-family:'NanumSquare'; color:#777; background:url(../images/common/ico-reset-g.png) no-repeat 0 -1.5px; background-size:16px; padding:2px 0 0 20px; display:inline-block;}
+.m-ticket-sub-title{font-size:12px; line-height:1.25em; color:#777; margin-bottom:10px;}
+.ticket-title{font-family:'NanumSquareBold'; font-size:15px; color:#23212a;}
+.ticket-title02{font-size:13px; color:#23212a;}
+.ticket-sub-title{font-size:12px; text-align:left; color:#777;}
+.ticket-title03{font-family:'NanumSquareBold'; font-size:12px; color:#23212a;}
+.ticket-price{font-family:'NanumSquareBold'; font-size:15px; letter-spacing:-0.3px;}
+.ticket-discount {font-family:'NanumSquareBold'; font-size:10px; padding:3px 5px 2px; display:inline-block; margin:7px 0 0; border-radius:3px;}
+.ticket-sale{display:inline-block; font-family:'NanumSquare'; font-size:13px; text-decoration:line-through; opacity:0.5; margin-right:5px; margin-top:6px;}
+.ticket-day{font-size:12px; color:#777; letter-spacing: -0.3px; font-family:'NanumSquare';}
+.ticket-buy-btn{display:inline-block; width:72px; height:30px; line-height:30px; border-radius:100px; text-align:center; font-size:13px; color:#fff;}
+.ticket-layout th .ticket-buy-btn{margin-top:17px;}
+
+.number-people{text-align:center;}
+.number-people img{width:32px;}
+.number-people-text01{font-size:13px; text-align:center;  color:#23212a;}
+.number-people-text02{font-size:11px; text-align:center; color:#777; margin-top:7px; padding-left:2px;}
+.number-people button {text-indent:-9999px; width:32px; height:32px;}
+.number-people .btn-minus {background:url(../images/common/user-minus-active.png) no-repeat; background-size:32px;}
+.number-people .btn-minus-off {background:url(../images/common/user-minus.png) no-repeat; background-size:32px;}
+.number-people .btn-plus {background:url(../images/common/user-add-active.png) no-repeat; background-size:32px;}
+.number-people .btn-plus-off {background:url(../images/common/user-add.png) no-repeat; background-size:32px;}
+
+/* 이용권 색깔 */
+/* 보라색 */
+/*
+.ticket-purple .ticket-price{color:#8045dd;}
+.ticket-purple .ticket-buy-btn{background-color:#8045dd;}
+.ticket-purple.ticket-list-open .ticket-list-btn-tit{color:#8045dd;}
+.ticket-payment-layout.ticket-purple .ticket-list-btn-tit{color:#8045dd;}*/
+
+/* 하늘색 */
+/*
+.ticket-skyblue .ticket-price{color:#1da8ee;}
+.ticket-skyblue .ticket-buy-btn{background-color:#1da8ee;}
+.ticket-skyblue.ticket-list-open .ticket-list-btn-tit{color:#1da8ee;}
+.ticket-payment-layout.ticket-skyblue .ticket-list-btn-tit{color:#1da8ee;}*/
+
+/* 빨간색 */
+/*
+.ticket-red .ticket-price{color:#ff3c33;}
+.ticket-red .ticket-buy-btn{background-color:#ff3c33;}
+.ticket-red.ticket-list-open .ticket-list-btn-tit{color:#ff3c33;}
+.ticket-payment-layout.ticket-red .ticket-list-btn-tit{color:#ff3c33;}*/
+
+/* 초록색 */
+/*
+.ticket-green .ticket-price{color:#00b3b4;}
+.ticket-green .ticket-buy-btn{background-color:#00b3b4;}
+.ticket-green.ticket-list-open .ticket-list-btn-tit{color:#00b3b4;}
+.ticket-payment-layout.ticket-green .ticket-list-btn-tit{color:#00b3b4;}
+.ticket-green .ticket-discount{color:#00b3b4; border:0.5px solid #00b3b4;}*/
+
+/* 주의사항 */
+.ticket-noti-wrap{margin-top:10px;}
+.dis-txt {color:#00b3b4; font-size:12px; border-bottom:1px solid #00b3b4; display:inline-block; margin:0 0 10px 10px; background:url(../images/common/btn-des-arrow.png) no-repeat right center; padding-right:20px; background-size:16px;  font-family:'NanumSquareBold';}
+
+/* 주의사항 테이블 스타일 */
+.ticket-noti-table{width:100%; margin-top:10px; background-color:#fff; border-radius:4px;}
+.ticket-noti-table tr{border-bottom:1px solid #e5e5e5;}
+.ticket-noti-table th{font-weight:normal; font-size:12px; text-align:center;  color:#23212a; border-right:1px solid #e5e5e5; height:66px;}
+.ticket-noti-table td > span{font-size:11px;  color:#0060fe; display:block; margin-top:4px;}
+.ticket-noti-table td{text-align:center; border-right:1px solid #e5e5e5; height:50.5px;}
+.ticket-noti-table img{width:12px;}
+.ticket-noti-table th:last-child , .ticket-noti-table td:last-child{border-right:none;}
+.ticket-noti-table-noti{background-color:#fff; padding:10px 17px 20px; border-radius:0px 0px 4px 4px;}
+
+
+/* 제휴사 이미지 */
+.img-partner img {width:100%;}
+.ticket-aca-banner img {width:100%;}
+
+/**/
+.ticket-sort-empty{text-align:center; margin-bottom:25px;}
+.ticket-sort-empty > img{width:50px;}
+.ticket-sort-empty-text{font-size:14px;  color:#8045dd; margin-top:16px;}
+
+
+/* 결제하기 */
+.payment-wrap{background-color:#fff; border-radius:4px; margin-bottom:5px; padding:0 10px;}
+.payment-table{width:100%;}
+.payment-table tr{border-bottom:1px solid #e5e5e5;}
+.payment-table tr:last-child{border-bottom:none;}
+.payment-table td , .payment-table th{padding:18px 0;}
+.payment-table th{text-align:left; font-weight:normal; font-size:13px; color:#23212a; line-height:1.38; width:82px;}
+
+.payment-table.table-border tr{border-bottom:none;}
+.payment-table.table-border th{vertical-align:top;}
+
+.payment-table .ticket-title{margin-bottom:5px;}
+.payment-table .em-text{font-size:13px;  letter-spacing:-0.2px; color:#8045dd;}
+.payment-table .ticket-price{color:#8045dd;}
+.payment-table .ticket-price-big{font-family:'NanumSquareBold'; font-size:18px; color:#8045dd;}
+.payment-event img{width:100%;}
+
+.payment-table .radio-style input[type="radio"] + label{font-size:13px; color:#23212a;}
+.payment-table .radio-style input[type="radio"] + label:before{margin-right:14px !important;}
+
+.payment-check .check-style{margin-top:10px;}
+.payment-check .check-style input[type="checkbox"].check-purple + label:before{background-color:transparent;}
+.payment-check label > span{display:inline-block; width:calc(100% - 40px); vertical-align:middle;}
+
+.payment-noti-wrap{padding:0 10px;}
+.noti-more-btn ~ label{font-size:11px; font-family:'NanumSquareBold';  color:#8045dd; padding:0 17px 0 10px; background-image:url(../images/common/arrow-open-purple.png); background-repeat:no-repeat; background-position:right center; background-size:12px;}
+.noti-more-btn ~ label:before{content:"자세히보기"; }
+.ticket-noti-more{display:none; margin-top:20px;}
+.noti-more-btn:checked ~ .ticket-noti-more{display:block;}
+.noti-more-btn:checked ~ label{background-image:url(../images/common/arrow-close-purple.png);}
+.noti-more-btn:checked ~ label:before{content:"닫기"; }
+
+/* payco 최종 */
+.payment-total{background-color:#fff; border-radius:4px; padding:10px  15px;}
+.payment-total > p:after{content:""; display:block; clear:both;}
+.payment-total > p{font-size:12px;  color:#000; padding:10px 0;}
+.sale-price{float:right; font-size:13px; color:#777;}
+.total-price{float:right; font-family:'NanumSquareBold';  font-size:18px; color:#8045dd;}
+
+
+/* 단건 구매 */
+.ticket-one{width:100%; background-color:#fff; border-radius:4px; padding:17px 15px 10px; border:solid 1px #777;}
+.ticket-one-tit{font-size:13px; letter-spacing:-0.2px; color:#23212a; margin-bottom:6px;}
+.ticket-one-text{font-size:12px;  letter-spacing:-0.2px; color:#777;}
+.ticket-one-price{font-size:14px;  color:#23212a; display:inline-block;}
+.ticket-one-price > span{font-family:'NanumSquareBold'; color: #23212a;}
+.ticket-one-bt{margin-top:10px; height:30px; line-height:30px;}
+.ticket-one-bt:after{content:""; display:block; clear:both;}
+.ticket-one-bt .ticket-buy-btn{float:right; background-color:#8045dd;}
+
+
+/* */
+.table-select{
+	width:100%;
+	height:47px;
+	line-height:47px;
+	border-radius:5px;
+	border:solid 1px #d9d9d9;
+	padding:0 15px;
+	font-size:14px;
+	color:#777;
+	background:url(../images/common/arrow-list-open.png) #fff no-repeat 95% center;
+	background-size:16px;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family:'NanumSquare';
+}
+
+.payment-input input[type="text"]{
+	width:100%;
+	height:47px;
+	line-height:47px;
+	border-radius:5px;
+	border:solid 1px #d9d9d9;
+	background-color:#fff;
+	padding:0 15px;
+	font-size:14px;
+	color: #23212a;
+	font-family:'NanumSquare';
+}
+
+.payment-my-point{padding-top:15px;}
+.payment-my-point:after{content:""; display:block; clear:both;}
+.payment-my-point > p{float:left; width:31%; width:calc(50% - 36px); width:-webkit-calc(50% - 36px); width:-moz-calc(50% - 36px);  font-size:13px;  color:#777; height:30px; line-height:30px;}
+.payment-my-point > button{
+	float:right;
+	display:inline-block;
+	width:72px;
+	height:30px;
+	line-height:30px;
+	border-radius:100px;
+	border:solid 1px #d9d9d9;
+	font-size:13px;
+	text-align:center;
+	color:#23212a;
+	font-family:'NanumSquare';
+}
+
+.total-sale{font-size:13px; color:#777;}
+.total-sale:after{content:""; display:block; clear:both;}
+.total-sale > span{float:right;}
+.total-sale:first-child{margin-bottom:13px;}
+
+.total-bt{border-top:1px solid #e5e5e5;}
+
+
+/* 구매완료 */
+.payment-final-text{padding:36px 0;  text-align:center;}
+.payment-final-text p{font-family:'NanumSquareBold'; font-size:15px; letter-spacing:-0.3px; color:#8045dd;}
+
+
+/* 푹존 이용권*/
+.pooqzone-top img{width:100%;}
+.pooqzone-title-wrap{padding-bottom:15px;}
+.pooqzone-table{width:100%; background-color:#Fff; border-radius:4px; margin-top:10px;}
+.pooqzone-table tr{border-bottom:1px solid #e5e5e5;}
+.pooqzone-table th{font-weight:normal; text-align:center; font-size:12px; color:#23212a; border-right:1px solid #e5e5e5;  padding:17px 0;}
+.pooqzone-table td{text-align:center; font-size:12px; color:#23212a;  border-right:1px solid #e5e5e5; padding:17px 0;}
+.pooqzone-table thead th:last-child{border-right:none;}
+.pooqzone-table td:last-child{border-right:none;}
+.pooqzone-table tbody tr:last-child{border-bottom:none;}
+.pooqzone-price-purple{font-size:15px; font-family:'NanumSquareBold';  letter-spacing:-0.3px;  color:#8045dd;}
+.pooqzone-price-blue{font-size:15px; font-family:'NanumSquareBold';  letter-spacing:-0.3px;  color:#1da8ee;}
+
+
+/*쿠폰 코인 등록*/
+.ticket-coupon-wrap{background-color:#fff; border-radius:4px; padding:20px 15px; margin-bottom:5px;}
+.ticket-coupon-wrap .m-ticket-title{margin-bottom:14px;}
+.coupon-input input[type="text"]{
+	width:100%;
+	height:47px;
+	border-radius:5px;
+	border:solid 1px #d9d9d9;
+	background-color:#fff;
+	padding:0 15px;
+	font-size:14px;
+	color: #23212a;
+	font-family:'NanumSquare';
+	text-align:center;
+}
+.coupon-btn {text-align:center; margin-top:10px; margin-bottom:20px;}
+.coupon-btn button{width:97px; height:36px; border-radius:100px; background-color:#8045dd; color:#fff;  font-family:'NanumSquare'; }
+.coupon-btn button.btn-disable{color:#fff !important;}
+
+.charge-coin{display:table; width:100%; margin-bottom:25px;}
+.charge-coin-l{display:table-cell;  vertical-align:middle; width:calc(100% - 72px); padding-right:15px;}
+.charge-coin-l > p{font-size:13px;  line-height:1.38em; text-align:left;  color:#23212a;}
+.charge-coin-l > p span{font-family:'NanumSquareBold';  color:#8045dd;}
+.charge-coin-r{display:table-cell; vertical-align:middle; width:72px;}
+.charge-coin-r button{width:72px; height:30px; border-radius:100px;  border:solid 1px #8045dd; font-size:13px; color:#23212a; font-family:'NanumSquare';}

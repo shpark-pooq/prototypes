@@ -1,0 +1,313 @@
+@charset "UTF-8";
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.blind{overflow:hidden; left:0; top:0; width:0; height:0; font-size:0; line-height:0;}
+
+/* 텍스트 스타일 */
+.sec-tit{font-weight:normal; font-size:23px; font-family:'NanumSquare ExtraBold'; color:#23212a; text-align:center;}
+.sec-sub-tit{font-weight:normal; font-size:14px; color:#23212a; font-family:'NanumSquare ExtraBold';}
+.sec-sub-tit02{font-weight:normal; font-size:16px; color:#23212a; font-family:'NanumSquareBold';}
+.sec-sub-tit03{font-weight:normal; font-size:16px; color:#23212a; font-family:'NanumSquare ExtraBold';}
+.sec-sub-tit04{font-weight:normal; font-size:14px; color:#23212a; font-family:'NanumSquareBold';}
+
+.g-text01{font-size:12px; color:#777; line-height:20px;}
+.g-text02{font-size:13px; color:#777; line-height:20px;}
+.g-text03{font-size:13px; color:#23212a; line-height:20px;}
+.g-text04{font-size:13px; color:#333;}
+
+/*공통*/
+section{margin:0 auto;}
+.guide-wrap{padding:40px 12px; }
+.bg-gray{background-color:#f2f2f2;}
+.bg-purple{background-color:#9f49ee;}
+.col-purple{color:#8045dd !important;}
+.fb{ font-family:'NanumSquareBold';}
+.tal{text-align:left;}
+.tac{text-align:center;}
+.mt20{margin-top:20px !important;}
+
+/* 가이드 상단 */
+.guide-top{width:100%; height:100%; min-height:462px; position:relative;}
+.guide-top{width:100%; background:url(../images/guide/guide-bg.jpg) no-repeat top center; background-size:cover;}
+.guide-logo{position:absolute; top:28px; left:50%; margin-left:-55px;}
+.guide-logo > img{width:110px;}
+.guide-login{position:absolute; right:12px; top:28px; display:inline-block; font-size:8px; color:#fff; font-family:'NanumSquare ExtraBold'; padding:8px 10px; border:1px solid #8045dd; border-radius:100px;}
+
+.guide-nav{display:block; text-align:center; padding-top:67px;}
+.guide-nav li{display:inline-block; margin:0 25px;}
+.guide-nav a {font-size:14px; color:#fff; display:inline-block; padding-bottom:5px;}
+.guide-nav a.guide-nav-on{border-bottom:2px solid #fff;}
+
+.guide-top-content{padding-top:76px; text-align:center;}
+.guide-top .guide-top-content > img{width:70px; display:block; margin:0 auto 24px;}
+.sec01-tit{color:#fff; font-size:29px; font-family:'NanumSquare ExtraBold'; margin-bottom:15px;}
+.guide-top-content .g-text01{color:#fff;}
+
+.guide-top-btn{position:absolute; bottom:20px; left:50%; margin-left:-15px; display:inline-block; width:30px; height:30px; text-align:center; line-height:30px; border:1px solid #8045dd; border-radius:100%;}
+.guide-top-btn > img{width:12px;}
+
+
+/*상품/사용 안내 상단*/
+.guide02-top{width:100%; min-height:462px; position:relative; padding:0 20px 30px;}
+.guide02-top{width:100%; background:url(../images/guide/guide02-bg.jpg) no-repeat top center; background-size:cover;}
+.guide02-top .guide-top-content{padding-top:50px;}
+.guide02-top .guide-top-content > img{width:85%; display:block; margin:24px auto 0;}
+
+
+/* footer */
+.guide-ft-wrap{border-top:1px solid #f2f2f2; margin:0 auto;}
+.guide-ft{padding:20px; position:relative;}
+.ft-logo{position:absolute; right:20px; top:20px;}
+.ft-logo > img{width:72px;}
+
+.g-ft-link{margin-bottom:14px;}
+.g-ft-link:after{content:""; display:block; clear:both;}
+.g-ft-link li{float:left; margin-right:10px;}
+.g-ft-link a{font-size:11px; color:#23212a; font-family:'NanumSquareBold';}
+
+.com-info{margin-bottom:20px;}
+.com-info > p{color:#777; font-size:10px;}
+
+.copyrights{color:#999; font-size:9px;}
+
+/* 푹존 서비스란 */
+.guide-sec02-list:after{content:""; display:block; clear:both;}
+.guide-sec02-list{padding-top:40px;}
+.guide-sec02-list li{float:left; width:50%; text-align:center; padding:0 10px;}
+.guide-sec02-list img{width:69px;}
+.guide-sec02-list .sec-sub-tit{margin-bottom:10px;}
+
+
+/* 실시간 TV & VOD ....*/
+.guide-sec03{background-color:#fbfbfb;}
+.guide-sec03-slider{padding-top:24px;}
+.guide-sec03-slider .swiper-container{padding-top:50px;}
+.guide-sec03-slider .swiper-slide img{width:100%;}
+.guide-sec03-slider .swiper-pagination{bottom:inherit; top:0; height:26px;}
+.guide-sec03-slider .swiper-pagination-bullet{width:auto; height:auto; background:transparent; opacity:1; font-size:12px; color:#23212a; font-family:'NanumSquareBold'; border-radius:0; padding-bottom:6px; margin:0 15px !important;}
+.guide-sec03-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{border-bottom:2px solid #8045dd;}
+.guide-sec03-slider .swiper-pagination-bullet:first-child:before{content:"스마트폰";}
+.guide-sec03-slider .swiper-pagination-bullet:nth-child(2):before{content:"PC";}
+.guide-sec03-slider .swiper-pagination-bullet:last-child:before{content:"태블릿";}
+
+/*푹존 이용 사례*/
+.guide-sec04 .guide-wrap{padding-bottom:0;}
+.guide-sec04 .sec-tit{margin-bottom:14px;}
+.guide-sec04 .g-text02{text-align:center; margin-bottom:16px;}
+
+.guide-sec04-slider .swiper-slide img{width:100%;}
+.g04-slider-btn-wrap{background:url(../images/guide/g-sec03-tit.png) #fff no-repeat 20px center; background-size:50px; position:absolute; bottom:0; left:10px; width:calc(100% - 20px); height:27px; z-index:15;}
+.g04-slider-btn-wrap .swiper-button-prev, .g04-slider-btn-wrap .swiper-button-next{background-color:#8045dd; top:0; margin-top:0; width:27px; height:27px; background-size:4px;}
+.g04-slider-btn-wrap .swiper-button-prev{left:auto; right:27px; background-image:url(../images/guide/g-sec03-pre.png);}
+.g04-slider-btn-wrap .swiper-button-next{left:auto; right:0px; background-image:url(../images/guide/g-sec03-next.png);}
+.g04-slider-btn-wrap .swiper-button-disabled{background-color:#efefef !important;}
+
+.guide-sec04-slider .swiper-pagination{ bottom:33px !important;}
+.guide-sec04-slider .swiper-pagination-bullet{background-color:#b7b5b7; width:5px; height:5px; opacity:1;}
+.guide-sec04-slider .swiper-pagination-bullet-active{background-color:transparent; border:1px solid #8045dd; }
+
+
+/*푹존 서비스 가입 안내*/
+.guide-sec05{text-align:center;}
+.guide-sec05 .guide-wrap{padding:40px 20px;}
+.guide-sec05 .g-text02{margin-top:15px;}
+
+.g-sec05-wrap{margin-top:10px; padding:30px 20px;}
+.g-sec05-wrap > img{display:block; margin:0 auto 20px; }
+.g-sec04-ico01{width:44px;}
+.g-sec04-ico02{width:84px;}
+.g-sec05-wrap .sec-sub-tit02{margin-bottom:14px;}
+.g-sec05-wrap .g-text01{margin-bottom:30px;}
+.g-sec05-wrap.bg-purple > p {color:#fff;}
+
+.g-sec05-btn{display:inline-block; font-size:11px; font-family:'NanumSquareBold'; color:#23212a; padding:10px 12px; border-radius:100px; border:1px solid #8045dd;}
+
+.guide-sec05-list:after{content:""; display:block; clear:both;}
+.guide-sec05-list li{float:left; width:calc(33.3333% - 4.666666px); margin-right:7px;}
+.guide-sec05-list li:last-child{margin-right:0;}
+.guide-sec05-list li a{display:block; width:100%; height:110px; border:1px solid rgba(255,255,255,0.3); border-radius:6px; padding-top:15px;}
+.guide-sec05-list li a > img{width:30px; display:block; margin:0 auto 11px;}
+.guide-sec05-list li:hover a{border:1px solid rgba(255,255,255,1); }
+
+.g-sec05-text01{color:#fff; font-size:11px; line-height:13px; letter-spacing:-0.25px; display:block;  font-family:'NanumSquareBold';}
+.g-sec05-bt{margin-top:10px;}
+
+
+/* 상품 구매하기 */
+.guide02-sec01{text-align:center;}
+.guide02-sec01 .sec-tit{margin-bottom:14px;}
+.guide02-sec01 .g-text02{margin-bottom:14px;}
+.g02-se01-btn{display:inline-block; font-size:11px; font-family:'NanumSquareBold'; color:#23212a; padding:10px 12px; border-radius:100px; border:1px solid #8045dd;}
+
+
+.guide-table-wrap{text-align:left; padding-top:25px;}
+.guide-table-wrap .sec-sub-tit03{margin-bottom:14px;}
+.guide-table-wrap table{width:100%;}
+.guide-table-wrap caption{overflow:visible; visibility:inherit; width:auto; height:auto; line-height:12px; text-indent:0; font-size:12px; color:#23212a;  font-family:'NanumSquareBold'; text-align:left;}
+.guide-table-wrap caption:after{content:""; display:block; width:100%; height:3px; margin-top:10px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0, #7f45dd), color-stop(1, #c045ed));
+	background: -moz-linear-gradient(45deg, #7f45dd 0%, #c045ed 100%);
+	background: -webkit-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: -o-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: -ms-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f45dd', endColorstr='#c045ed', gradientType=1);
+}
+
+.guide-table-wrap tr{border-bottom:1px solid #f5f5f5; }
+.guide-table-wrap th{font-size:12px; font-weight:normal; color:#23212a; text-align:center; padding:13px 0; font-family:'NanumSquareBold';}
+.guide-table-wrap td{font-size:12px; color:#23212a; text-align:center; padding:13px 0; font-family:'NanumSquareBold';}
+
+.guide02-noti{text-align:left; padding-top:13px;}
+.dot-text{font-size:11px; color:#777; margin-bottom:4px;}
+.dot-text:last-child{margin-bottom:0;}
+.dot-text:before{content:""; display:inline-block; width:3px; height:3px; background-color:#e0e0e0; border-radius:100px; vertical-align:top; margin-top:5px;}
+.dot-text > span{display:inline-block; width:calc(100% - 10px); padding-left:5px; vertical-align:top; }
+
+
+/*매방 wifi ..*/
+.guide02-sec02{background:url(../images/guide/guide02-sec02-bg.jpg) no-repeat top center; background-size:cover; text-align:center;}
+.guide02-sec02 .sec-tit{color:#fff; margin-bottom:14px;}
+.guide02-sec02 .g-text02{color:#fff;}
+.guide02-sec02-ico{width:158px; display:block; margin:30px auto 0;}
+
+/* 관리자 로그인 */
+.guide02-sec03{text-align:center;}
+.guide02-sec03 .sec-tit{margin-bottom:14px;}
+.guide02-sec03 .g-text02{margin-bottom:14px;}
+
+.guide02-sec03-slider{padding-bottom:40px;}
+.guide02-sec03-slider .swiper-slide > img{width:100%;}
+
+
+.guide02-sec03-bt{width:100%; text-align:center; margin-top:20px;}
+.guide02-sec03-bt .swiper-button-prev,
+.guide02-sec03-bt .swiper-button-next{
+	position:inherit; 
+	top:inherit; 
+	margin-top:0;
+	display:inline-block;
+	width:36px;
+	height:36px;
+	background-size:36px;
+	vertical-align:middle;
+}
+.guide02-sec03-slider .swiper-button-prev{background-image:url(../images/guide/guide02-sec03-slider-pre.png);}
+.guide02-sec03-slider .swiper-button-next{background-image:url(../images/guide/guide02-sec03-slider-next.png);}
+.guide02-sec03-slider .swiper-pagination{
+	position:inherit; 
+	bottom:inherit;
+	display:inline-block;
+	vertical-align:middle;
+}
+.guide02-sec03-slider .swiper-pagination-bullet{background-color:#e5e5e5; width:6px; height:6px; opacity:1; margin:0 4px;}
+.guide02-sec03-slider .swiper-pagination-bullet-active{background-color:transparent; border:1px solid #8045dd; }
+
+
+/**/
+.guide02-sec04{text-align:center; background-color:#fbfbfb;}
+.guide02-sec04-list{margin-top:35px;}
+.guide02-sec04-list:after{content:""; display:block; clear:both;}
+.guide02-sec04-list li{float:left; width:50%;}
+.guide02-sec04-list li img{display:block; margin:0 auto 15px;}
+.guide02-sec04-ico01{width:84px;}
+.guide02-sec04-ico02{width:86px;}
+.guide02-sec04-ico03{width:61px;}
+.guide02-sec04-ico04{width:46px;}
+
+.guide-down{display:table; width:100%; background-color:#fff; border:1px solid #e1e1e1; margin-top:5px;}
+.guide-down-l{display:table-cell; text-align:left; width:calc(100% - 130px); vertical-align:middle; padding:20px 13px;}
+.guide-down-r{display:table-cell; text-align:center; width:130px; vertical-align:middle;}
+.guide-down-r a {display:inline-block; width:54px; height:33px; line-height:33px; border-radius:100px; border:1px solid #8045dd; font-size:12px; color:#23212a;  font-family:'NanumSquareBold';}
+
+
+/*푹존 찾기*/
+.guide-sub-top{background-color:#23212a; position:relative;}
+.guide-sub-top-wrap{padding:12px 20px;}
+.guide-sub-logo{display:inline-block;}
+.guide-sub-logo > img {width:111px;}
+.guide-sub-top .guide-login{top:12px;}
+
+.guide-form01{text-align:center;}
+.guide-form01 .g-text02{margin:10px 0;}
+.find-pooq-btn{display:inline-block; font-size:13px; font-family:'NanumSquareBold'; color:#23212a;}
+.find-pooq-btn > img{width:17px;}
+
+.ch-find-wrap{margin:30px 0;}
+.ch-find-wrap:after{content:""; display:block; clear:both;}
+.ch-find-wrap li{float:left; width:33.3333%; text-align:center;}
+.ch-find-wrap input[type="radio"]{position:absolute; clip:rect(0,0,0,0);}
+.ch-find-wrap input[type="radio"] + label:before {
+	content:' ';
+	display:inline-block;
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	background-color:#f2f2f2;
+	background-size:90px;
+}
+.ch-find-wrap input[type="radio"]:checked + label:before{background-color:#8045dd;}
+.find-pc label:before{background-image:url(../images/guide/guide-from-img01.png);}
+.find-library label:before{background-image:url(../images/guide/guide-from-img02.png);}
+.find-hospital label:before{background-image:url(../images/guide/guide-from-img03.png);}
+span.ch-find-tit{display:block; font-size:13px; color:#23212a;  font-family:'NanumSquareBold'; margin-top:5px;}
+
+.g-select{margin-top:10px;}
+.g-select select{
+	width:100%;
+	height:45px; 
+	padding-left:15px;
+	border:1px solid #e9e9e9;
+	background:url(../images/guide/g-select-arrow.png) no-repeat 95% center; 
+	background-size:11px;
+	-webkit-appearance:none; 
+	-moz-appearance: none;
+	appearance: none; 
+	-webkit-border-radius:0;
+	border-radius:0;
+	font-size:13px;
+	color:#333;
+	 font-family:'NanumSquare';
+}
+.g-select label > span{display:block; width:0; height:0; overflow:hidden;}
+
+.find-pooq-table{margin:35px 0 20px;}
+.find-pooq-table:before{content:""; display:block; width:100%; height:3px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0, #7f45dd), color-stop(1, #c045ed));
+	background: -moz-linear-gradient(45deg, #7f45dd 0%, #c045ed 100%);
+	background: -webkit-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: -o-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: -ms-linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	background: linear-gradient(45deg,  #7f45dd 0%, #c045ed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f45dd', endColorstr='#c045ed', gradientType=1);
+}
+
+.find-pooq-table table{width:100%; text-align:left; table-layout:fixed;}
+.find-pooq-table tr{border-bottom:1px solid #f5f5f5;}
+.find-pooq-table th{font-size:12px; color:#23212a; font-family:'NanumSquareBold'; height:45px;}
+.find-pooq-table tbody td{font-size:12px; color:#23212a; font-family:'NanumSquare'; height:45px;}
+.find-pooq-table a {display:block; text-align:right;}
+.find-pooq-table .map-ico{width:15px;}
+.pooq-list-add{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+.pager{text-align:center;}
+.pager li{display:inline-block; vertical-align:middle;}
+.pager a{display:block; color:#23212a;  font-size:12px; font-family:'NanumSquareBold'; width:30px; height:30px; text-align:center; line-height:30px; border-radius:50%;}
+.pager li.page-on a{border:1px solid #8045dd;}
+.pager-arrow{width:5px;}
+
+
+/*푹존 찾기 */
+.embed-container { position: relative; padding-bottom: 90.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.pz-add-wrap{padding:25px 20px;}
+.pz-tit{font-size:18px; color:#23212a; font-family:'NanumSquare ExtraBold'; line-height:22px; margin-bottom:4px;}
+.pz-add-btn{margin-top:15px;}
+.pz-add-btn:after{content:""; display:block; clear:both;}
+.pz-add-btn li{float:left; margin-right:13px;}
+.pz-add-btn a {font-size:12px; color:#23212a; font-family:'NanumSquareBold';}
+.pz-add-btn img{width:17px;}
+
+.guide-sub-top{text-align:center; position:relative;}
+.g-pop-tit{color:#fff; font-size:16px;  font-family:'NanumSquareBold';}
+.g-back{position:absolute; top:50%; left:20px; margin-top:-10px; width:8px; height:14px;}
+.g-back > img{width:8px;}
